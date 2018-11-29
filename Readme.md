@@ -1,6 +1,9 @@
 # Fabryka lodówek
 
-Twoim zadaniem jest oprogramowanie systemu kotroli produkcji w fabryce lodówek.
+* Opracowanie: _Krzysztof Molenda_
+* Wersja: _2018-11-29_
+
+Twoim zadaniem jest oprogramowanie systemu kontroli produkcji w fabryce lodówek.
 
 Linia produkcyjna fabryki jest całkowicie zautomatyzowana (zrobotyzowana). Składa się ona z wielu maszyn, każda realizująca określone zadanie, np. tłoczenie obudowy lodówki z blachy, spawanie, malowanie, montaż.
 
@@ -11,9 +14,22 @@ Każdy producent dostarczył oprogramowanie maszyny, zawierające zestaw funkcji
 
 Twoim zadaniem głównym jest zintegrowanie różnych systemów używanych przez maszyny w ramach jednego programu kontrolującego.
 
+---
+Celem głównym ćwiczenia jest zapoznanie się z koncepcją typu `delegate` oraz jednym z jego zastosowań -- tworzeniu kodu otwartego, elastycznego, łatwo rozszerzalnego. 
+
+Referencje:
+
+* [Extension Methods (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
+
+* [Delegates (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/)
+
+* [Action Delegate](https://docs.microsoft.com/en-us/dotnet/api/system.action?view=netframework-4.7.2)
+
+---
+
 ## Zadanie 1
 
-Zadanie bieżące: dostarczyć rozwiązanie umożliwiające wyłączenie całej linii produkcyjnej (wszystkich maszyn) możliwie szybko. Rozwiązanie ma być otwarte na ewentualne zmiany konfiguracji linii produkcyjnej (np. dodanie nowych maszyn, ...).
+**Zadanie bieżące**: dostarczyć rozwiązanie umożliwiające wyłączenie całej linii produkcyjnej (wszystkich maszyn) możliwie szybko. Rozwiązanie ma być otwarte na ewentualne zmiany konfiguracji linii produkcyjnej (np. dodanie nowych maszyn, ...).
 
 Każda z maszyn, oprócz jej właściwych funkcjonalności ma zaimplementowaną metodę bezpiecznie wyłączającą maszynę, ale każdy z producentów dostarczył ją pod inną nazwą i z inną sygnaturą, np.
 
