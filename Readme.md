@@ -15,7 +15,7 @@ Każdy producent dostarczył oprogramowanie maszyny, zawierające zestaw funkcji
 Twoim zadaniem głównym jest zintegrowanie różnych systemów używanych przez maszyny w ramach jednego programu kontrolującego.
 
 ---
-Celem głównym ćwiczenia jest zapoznanie się z koncepcją typu `delegate` oraz jednym z jego zastosowań -- tworzeniu kodu otwartego, elastycznego, łatwo rozszerzalnego. 
+Celem głównym ćwiczenia jest zapoznanie się z koncepcją typu `delegate` oraz jednym z jego zastosowań -- tworzeniem kodu otwartego, elastycznego, łatwo rozszerzalnego. 
 
 Referencje:
 
@@ -272,3 +272,13 @@ public class Controller2
     public ReadOnlyCollection<Delegate> ListaProcedur => Array.AsReadOnly<Delegate>( stopMachinery.GetInvocationList() );
 }
 ````
+
+## Zadanie 2
+
+W opracowaniu ...
+
+Maszyny mogą pracować niezawodnie przy ściśle określonych zakresach temperatury otoczenia. Przekroczenie tego zakresu powinno spowodować natychmiastowe wyłączenie maszyny.
+
+Np. przyjmijmy, że robot malujący (`PainterMachine`) może poprawnie działać w zakresie temperatury otoczenia od 4 do 30 stopni C. Przekroczenie tego zakresu powinno skutkować natychmiastowym wyłączeniem robota.
+
+W celu zabezpieczenia linii produkcyjnej 
